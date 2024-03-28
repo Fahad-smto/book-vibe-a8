@@ -46,8 +46,8 @@ const BookDetails = () => {
                 <p> <span className='mr-3'>Year of Publishing: </span>  {book.yearOfPublishing} </p>
                 <p> <span className='mr-3'>Rating: </span>  {book.rating} </p>
                <div className=" ">
-               <button onClick={handleToast} className='btn btn-primary '>Read</button>
-                <button  onClick={handleToast} className='btn btn-success ml-4'>Wishlist</button>
+               <button onClick={handleToast} className='btn   '>Read</button>
+                <button  onClick={handleToast} className='btn bg-[#50B1C9] ml-4'>Wishlist</button>
                </div>
 			</div>
 		</div>
