@@ -29,7 +29,7 @@ children :[
       {
          path :'read-book',
         element :<ReadBooks/>,
-
+        loader:()=>fetch(`/books.json`)
       },
       {
         path:'wishList',

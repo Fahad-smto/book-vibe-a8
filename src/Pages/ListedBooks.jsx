@@ -14,8 +14,15 @@ const ListedBooks = () => {
         </div>
 
 
-       <div className=" flex justify-center"> <button className="btn btn-success mt-4 mb-8">sort</button>
-       </div>
+		<div className="flex justify-center ">
+		<details className="dropdown ">
+  <summary className="m-1 btn bg-green-500">Sort</summary>
+  <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+    <li><a>Item 1</a></li>
+    <li><a>Item 2</a></li>
+  </ul>
+</details>
+		</div>
 
 
        <div className="flex -mx-4 overflow-x-auto overflow-y-hidden sm:  flex-nowrap dark:  dark: ">
