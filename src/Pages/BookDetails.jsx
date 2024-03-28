@@ -1,9 +1,14 @@
  
 import { useLoaderData, useParams } from 'react-router-dom';
-
+import { toast } from 'react-toastify';
+import { ToastContainer,  } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const BookDetails = () => {
+    const handleToast = ()=>{
+        toast('added successfully')
+    }
  
     // const [bookDetails,setBook] =useState([]);
 
@@ -38,13 +43,14 @@ console.log(book)
                 <p> <span className='mr-3'>Year of Publishing: </span>  {book.yearOfPublishing} </p>
                 <p> <span className='mr-3'>Rating: </span>  {book.rating} </p>
                <div className=" ">
-               <button className='btn btn-primary '>Read</button>
-                <button className='btn btn-success ml-4'>Wishlist</button>
+               <button onClick={handleToast} className='btn btn-primary '>Read</button>
+                <button onClick={handleToast} className='btn btn-success ml-4'>Wishlist</button>
                </div>
 			</div>
 		</a>
 	
 	</div>
+    <ToastContainer />
 </section>
     );
 };

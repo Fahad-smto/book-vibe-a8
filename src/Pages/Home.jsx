@@ -1,6 +1,6 @@
 import Banner from "../Components/Banner";
 import Books from "../Components/Books";
-import NavBar from "../Components/NavBar";
+ 
 
  
 
