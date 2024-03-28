@@ -42,8 +42,8 @@ const ReadBooks = () => {
 
      <div className=" flex gap-5">
       <div className=""> <button className="btn  bg-[#8dafd8]  rounded-full">category : {book.category}</button></div>
-      <div className=""> <button className="btn  bg-[#f0d0a0] rounded-full">category : {book.category}</button> </div>
-      <div className=""> <button className="btn  bg-[#9ad691] rounded-full">category : {book.category}</button> </div>
+      <div className=""> <button className="btn  bg-[#f0d0a0] rounded-full">rating : {book.rating}</button> </div>
+      <div className=""> <button className="btn  bg-[#9ad691] rounded-full">View Details  </button> </div>
      </div>
 
 
