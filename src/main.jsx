@@ -10,6 +10,8 @@ import Layout from './Layouts/Layout.jsx'
 import BookDetails from './Pages/BookDetails.jsx'
 import ReadBooks from './Components/ReadBooks.jsx'
 import WishList from './Components/WishList.jsx'
+import About from './Pages/About.jsx'
+import Comics from './Pages/Comics.jsx'
 
 
 const router = createBrowserRouter([
@@ -48,6 +50,15 @@ children :[
     loader:()=>fetch(`/books.json`),
    
   },
+
+  {
+    path :'/about',
+    element :<About/>
+  },
+  {
+    path : '/comics',
+    element:<Comics/>
+  }
 
 ]
   },

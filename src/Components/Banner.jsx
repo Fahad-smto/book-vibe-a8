@@ -10,7 +10,7 @@ const Banner = () => {
        <h1 className="text-6xl font-extrabold mt-48 ml-20 font-serif ">Books to freshen up <br />  your bookshelf</h1>
         <button  className="btn bg-[#23BE0A] text-white ml-20 mt-5"> View The List</button>
        </div>
-        <div className=" my-20 ml-6"><img src="/public/pngwing 1.png" alt="" /></div>
+        <div className=" my-20 ml-6"><img src="public/pngwing 1.png" alt="" /></div>
       
        </div>
        

@@ -12,13 +12,19 @@ const NavBar = () => {
       </div>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-2">
         <NavLink to='/'
-        className={({isActive})=> isActive ? 'text-primary font-bold':'font-bold'}>Home
+        className={({isActive})=> isActive ?  'text-success border bg-green-50    rounded-sm font-bold':'font-bold'}>Home
         </NavLink>
         <NavLink to='/list-book'
-        className={({isActive})=> isActive ? 'text-primary font-bold':'font-bold'}>Listed Books
+        className={({isActive})=> isActive ?  'text-success border bg-green-50    rounded-sm font-bold':'font-bold'}>Listed Books
         </NavLink>
         <NavLink to='/page-to-read'
-        className={({isActive})=> isActive ? 'text-primary font-bold':'font-bold'}>Pages to Read
+        className={({isActive})=> isActive ?  'text-success border bg-green-50    rounded-sm font-bold':'font-bold'}>Pages to Read
+        </NavLink>
+        <NavLink to='/comics'
+        className={({isActive})=> isActive ?  'text-success border bg-green-50    rounded-sm font-bold':'font-bold'}> Comics
+        </NavLink>
+        <NavLink to='/about'
+        className={({isActive})=> isActive ?  'text-success border bg-green-50    rounded-sm font-bold':'font-bold'}>About
         </NavLink>
          
       </ul>
@@ -36,6 +42,12 @@ const NavBar = () => {
         <NavLink to='/page-to-read'
         className={({isActive})=> isActive ? 'text-success border bg-green-50    rounded-sm font-bold':'font-bold'}>Pages to Read
         </NavLink>
+        <NavLink to='/comics'
+        className={({isActive})=> isActive ? 'text-success border bg-green-50    rounded-sm font-bold':'font-bold'}> Comics
+        </NavLink>
+        <NavLink to='/about'
+        className={({isActive})=> isActive ?  'text-success border bg-green-50    rounded-sm font-bold':'font-bold'}>About
+        </NavLink> 
     </ul>
   </div>
   <div className="navbar-end gap-2">

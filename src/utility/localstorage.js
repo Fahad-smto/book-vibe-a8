@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 const getStoredBookRequest =() =>{
     const storedBookRequest = localStorage.getItem('book-requests');
     if(storedBookRequest){
@@ -17,6 +19,10 @@ const saveBookRequest =(id) =>{
     if(!exists){
         storedBookRequests.push(id);
         localStorage.setItem('book-requests',JSON.stringify(storedBookRequests))
+        toast('added successfully')
+    }
+    else{
+        toast.warn('already added')
     }
 
 }

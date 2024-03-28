@@ -1,6 +1,6 @@
  
 import { useLoaderData, useParams } from 'react-router-dom';
-import { toast } from 'react-toastify';
+ 
 import { ToastContainer,  } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { saveBookRequest } from '../utility/localstorage';
@@ -21,7 +21,7 @@ const BookDetails = () => {
     const book = books.find(book =>book.bookId==id);
  
     const handleToast = ()=>{
-        toast('added successfully')
+       
         saveBookRequest(book.bookId)
        
     }

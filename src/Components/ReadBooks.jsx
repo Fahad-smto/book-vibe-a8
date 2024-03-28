@@ -13,6 +13,7 @@ const ReadBooks = () => {
             const bookRequests =books.filter(book => storeBooks.includes(book.bookId))
            
             setReadbooks(bookRequests);
+            console.log( bookRequests);
         }
         
     },[])
@@ -25,6 +26,7 @@ const ReadBooks = () => {
           {
             readBooks.map(book => <div key={book.id} >
                  
+ 
 
          <div className="card card-side bg-base-100 shadow-xl  mt-6">
       <figure><img src={book.image} alt="Movie"/></figure>
@@ -49,12 +51,10 @@ const ReadBooks = () => {
 
   </div>
 </div>
-
-
-
-
             </div>)
+            
           }
+          
        </div>
     );
 };
