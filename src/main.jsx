@@ -12,11 +12,18 @@ import ReadBooks from './Components/ReadBooks.jsx'
 import WishList from './Components/WishList.jsx'
 import About from './Pages/About.jsx'
 import Comics from './Pages/Comics.jsx'
+import NoMatch from './Components/NoMatch.jsx'
 
 
 const router = createBrowserRouter([
+
   {
+    path: '*',
+    element:<NoMatch/>,
   
+  },
+  {
+    
  path :'/',
  element: <Layout/>,
 children :[
