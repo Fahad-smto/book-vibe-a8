@@ -2,8 +2,8 @@
 
 const PagesToRead = () => {
     return (
-        <div>
-            <h1>i am pages to read page</h1>
+        <div className="flex justify-center items-center">
+            <h1>loading...</h1>
         </div>
     );
 };

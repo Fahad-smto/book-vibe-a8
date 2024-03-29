@@ -10,7 +10,7 @@ const Comics = () => {
     const [books ,setBooks] = useState([]);
 
     useEffect(()=>{
-        fetch('comics.json')
+        fetch('/comics.json')
         .then(res =>res.json())
         .then(data =>setBooks(data));
         
