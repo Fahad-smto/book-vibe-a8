@@ -17,7 +17,6 @@ const Comics = () => {
        
     },[])
 
- 
 
 
     return (
